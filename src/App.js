@@ -1,5 +1,13 @@
+import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
+import { useState } from "react";
+
 function App() {
-  return <div>App</div>;
+  const [isLoggedIn, setISLoggedIn] = useState(false);
+  return (
+    <Router>
+      <Switch></Switch>
+    </Router>
+  );
 }
 
 export default App;
