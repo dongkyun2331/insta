@@ -1,7 +1,9 @@
-export const Home = ({ setIsLoggedIn }) => {
+import { isLoggedInVar } from "../apollo";
+
+export const Home = () => {
   return (
     <div>
-      <button onClick={() => setIsLoggedIn(false)}>Log out</button>
+      <button onClick={() => isLoggedInVar(false)}>Log out</button>
     </div>
   );
 };
